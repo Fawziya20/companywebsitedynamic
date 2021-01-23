@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cisco Private Limited</title>
+    <link rel="stylesheet" href="{% static 'css/layout.css' %}">
+    <link rel = "icon" href ="{% static 'img/titleicon.png' %}" type = "image/x-icon"> 
+              
+</head>
+
+<body>
+    <div class="container">
+    <div class="banner">
+    Cisco Private Limited.
+    </div>
+    <div class="menu">
+        <div class="menuitem"><a href="/home">Home</a></div> 
+        <div class="menuitem"><a href="/products">Products</a></div> 
+        <div class="menuitem"><a href="/people">People</a></div>
+        <div class="menuitem"><a href="/contactus">Contact us</a></div>
+    </div><div class="content">
+    {% block content %}    
+    {% endblock  %}
+    </div>
+    <div class="footer">
+        Copyright © 2020 Cisco Private Limited, Developed by A.Fawziya.
+    </div>
+    </div>
+</body>
+
+</html>
