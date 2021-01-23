@@ -21,6 +21,7 @@ Publish the website in the given URL.
 ## PROGRAM:
 
 ### base.html
+
 ```
 {% load static %}
 <!DOCTYPE html>
@@ -57,6 +58,7 @@ Publish the website in the given URL.
 ```
 
 ### home.html
+
 ```
 {% extends "website/base.html" %}
 
@@ -81,6 +83,7 @@ Publish the website in the given URL.
 ```
 
 ### products.html
+
 ```
 {% extends "website/base.html" %}
 
@@ -103,6 +106,7 @@ Publish the website in the given URL.
 ```
 
 ### people.html
+
 ```
 {% extends "website/base.html" %}
 
@@ -125,6 +129,7 @@ Publish the website in the given URL.
 ```
 
 ### contactus.html
+
 ```
 {% extends "website/base.html" %}
 
@@ -143,6 +148,7 @@ Publish the website in the given URL.
 ```
 
 ### admin.py
+
 ```
 from django.contrib import admin
 from .models import people,peopleAdmin
@@ -156,6 +162,7 @@ admin.site.register(people,peopleAdmin)
 admin.site.register(products,productsAdmin)
 ```
 ### models.py
+
 ```
 from django.db import models
 from django.contrib import admin
@@ -177,17 +184,24 @@ class productsAdmin(admin.ModelAdmin):
 ```
 
 ## OUTPUT:
+
 ![output](./static/img/home.png)
+
 ![output](./static/img/product.png)
+
 ![output](./static/img/people.png)
+
 ![output](./static/img/contactus.png)
 
 ## Admin page:
+
 ![output](./static/img/productadmin.png)
+
 ![output](./static/img/peopleadmin.png)
 
 
 ## CODE VALIDATION REPORT:
+
 ![output](./static/img/homevalid.png)
 
 ![output](./static/img/productvalid.png)
